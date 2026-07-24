@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Ventas</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Ventas</h1>
+        <p>Registro y administración de productos</p>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a> |
+        <a href="#">Productos</a> |
+        <a href="#">Ventas</a> |
+        <a href="#">Clientes</a> |
+        <a href="#">Reportes</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Registrar Producto</h2>
+
+            <form action="#" method="post">
+
+                <label for="codigo">Código:</label><br>
+                <input type="text" id="codigo" name="codigo"><br><br>
+
+                <label for="nombre">Nombre del Producto:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="categoria">Categoría:</label><br>
+                <select id="categoria" name="categoria">
+                    <option>Ropa</option>
+                    <option>Calzado</option>
+                    <option>Accesorios</option>
+                </select><br><br>
+
+                <label for="precio">Precio:</label><br>
+                <input type="number" id="precio" name="precio"><br><br>
+
+                <label for="stock">Stock:</label><br>
+                <input type="number" id="stock" name="stock"><br><br>
+
+                <button type="submit">Guardar Producto</button>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Productos Registrados</h2>
+
+            <article>
+                <h3>Polera Deportiva</h3>
+                <p><strong>Categoría:</strong> Ropa</p>
+                <p><strong>Precio:</strong> Bs. 120</p>
+                <p><strong>Stock:</strong> 15 unidades</p>
+            </article>
+
+            <article>
+                <h3>Zapatillas Urbanas</h3>
+                <p><strong>Categoría:</strong> Calzado</p>
+                <p><strong>Precio:</strong> Bs. 350</p>
+                <p><strong>Stock:</strong> 8 unidades</p>
+            </article>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Ventas Alex-Brayan - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
