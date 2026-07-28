@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema de Registro</h1>
+        <p>Registrar Cliente</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Ventas</a>
+        <a href="formulario.html">Clientes</a>
+        <a href="#">Reportes</a>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>Registro de Cliente</h2>
+
+            <form action="#" method="post">
+
+                <div class="campo">
+                    <label for="nombre">Nombres</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese los nombres" required>
+                </div>
+
+                <div class="campo">
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese los apellidos" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 71234567">
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+                </div>
+
+                <div class="campo">
+                    <label for="ci">CI</label>
+                    <input type="text" id="ci" name="ci" placeholder="Ingrese el documento" required>
+                </div>
+
+                <div class="campo">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese la ciudad">
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha de Registro</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div class="botones">
+                    <button type="submit">Registrar Cliente</button>
+                    <button type="reset" class="cancelar">Limpiar</button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Ventas Alex-Brayan</p>
+    </footer>
+
+</body>
+
+</html>
