@@ -22,9 +22,14 @@ header p{
 }
 
 nav{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
     background-color: #34495e;
-    text-align: center;
-    padding: 12px;
+    padding: 15px;
+    flex-wrap: wrap;
 }
 
 nav a{
@@ -39,9 +44,14 @@ nav a:hover{
 }
 
 main{
+    
     width: 90%;
     max-width: 1000px;
-    margin: 25px auto;
+    margin: 40px auto;
+}
+
+main section{
+    margin-bottom: 30px;
 }
 
 section{
@@ -66,6 +76,7 @@ form label{
 form input,
 form select{
     width: 100%;
+    max-width: 100%;
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -115,4 +126,11 @@ footer{
     text-align: center;
     padding: 15px;
     margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
 }
