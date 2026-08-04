@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe el Trigal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>Cafe El Trigal</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#cafe">Nuestro café</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="cafe" class="tarjeta">
+
+            <h2>Nuestro café</h2>
+
+            <p>
+                En Cafe El Trigal ofrecemos bebidas preparadas con cafe de alta calidad
+                en un ambiente calido y familiar para disfrutar con amigos y familiares.
+            </p>
+
+            <ul>
+                <li>Cafe americano-Bs 12</li>
+                <li>Capuchino-Bs 18</li>
+                <li>Submarino-Bs 15</li>
+            </ul>
+
+        </section>
+
+        <section id="contacto" class="tarjeta">
+
+            <h2>Haz tu pedido</h2>
+
+            <form>
+
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" required><br><br>
+
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" required><br><br>
+
+                <label for="pedido">Tu pedido:</label><br>
+                <textarea id="pedido"></textarea><br><br>
+
+            </form>
+
+            <button type="button" id="btn-confirmar">Confirmar pedido</button>
+
+            <p id="mensaje" class="oculto"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© Parcial 1 - Alex Brayan Flores Daga - 3 de agosto de 2026</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
