@@ -31,7 +31,7 @@
 
             <h2>Registro de Cliente</h2>
 
-            <form action="#" method="post">
+            <form id="form-pedido" novalidate>
 
                 <div class="campo">
                     <label for="nombre">Nombres</label>
@@ -70,9 +70,8 @@
 
                 <div class="botones">
                     <button type="submit">Registrar Cliente</button>
-                    <button type="reset" class="cancelar">Limpiar</button>
                 </div>
-
+                <p id="error-pedido" class="aviso"></p>
             </form>
 
         </section>
@@ -82,7 +81,7 @@
     <footer>
         <p>&copy; 2026 Sistema de Ventas Alex-Brayan</p>
     </footer>
-
+    <script src="validacion.js"></script>
 </body>
 
 </html>

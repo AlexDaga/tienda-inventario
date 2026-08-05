@@ -18,3 +18,4 @@ function altenarModo() {
 }
 
 botonModo.addEventListener("click", altenarModo);
+
