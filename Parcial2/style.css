@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #F5F5F5;
+    color: #333333;
+}
+
+header{
+    background-color: #5DADE2;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section{
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+h2{
+    color: #2874A6;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea{
+    min-height: 100px;
+    resize: vertical;
+}
+
+button{
+    background-color: #2874A6;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.aviso{
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.aviso.error{
+    background-color: #FADBD8;
+    color: #C0392B;
+    border: 1px solid #C0392B;
+}
+
+.aviso.exito{
+    background-color: #D5F5E3;
+    color: #1E8449;
+    border: 1px solid #1E8449;
+}
+
+footer{
+    background-color: #5DADE2;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 600px){
+
+    main{
+        padding: 10px;
+    }
+
+    section{
+        padding: 15px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+}
