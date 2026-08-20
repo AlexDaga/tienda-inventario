@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #1a1a1a;
+}
+
+.seccion-empresa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    max-width: 1150px;
+    min-height: 360px;
+
+    margin: 40px auto;
+    padding: 40px 50px;
+
+    background-color: #fff;
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+/* TEXTO */
+.texto-empresa {
+    flex: 1;
+}
+
+.texto-empresa h2 {
+    text-align: left;
+    margin-bottom: 25px;
+
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.texto-empresa p {
+    margin-bottom: 18px;
+
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.texto-empresa strong {
+    color: #b8860b;
+    font-weight: 700;
+}
+
+/* IMAGEN */
+.imagen-empresa {
+    flex-shrink: 0;
+    width: 280px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-empresa img {
+    width: 280px;
+    height: auto;
+
+    display: block;
+    border-radius: 14px;
+
+    transition: transform 0.3s ease;
+}
+
+.imagen-empresa img:hover {
+    transform: scale(1.03);
+}
+
+/* TÍTULO DE PRODUCTOS */
+.titulo-productos {
+    text-align: center;
+
+    margin: 50px auto 25px;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    .seccion-empresa {
+        max-width: 90%;
+        gap: 30px;
+        padding: 35px;
+    }
+
+    .imagen-empresa {
+        width: 230px;
+    }
+
+    .imagen-empresa img {
+        width: 230px;
+    }
+
+    .texto-empresa h2 {
+        font-size: 1.8rem;
+    }
+
+    .texto-empresa p {
+        font-size: 1rem;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+
+    .seccion-empresa {
+        flex-direction: column;
+        text-align: center;
+
+        max-width: 92%;
+        min-height: auto;
+
+        padding: 30px 25px;
+        gap: 25px;
+    }
+
+    .texto-empresa h2 {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+
+    .texto-empresa p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .imagen-empresa {
+        width: 100%;
+    }
+
+    .imagen-empresa img {
+        width: 260px;
+        max-width: 100%;
+    }
+
+    .titulo-productos {
+        font-size: 1.5rem;
+    }
+}

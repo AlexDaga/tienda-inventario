@@ -1,0 +1,76 @@
+.formulario {
+    width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #FFFFFF;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+}
+
+.formulario h2 {
+    text-align: center;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 12px;
+    color: #1A1A1A;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 9px 15px;
+    background: #FFD700;
+    color: #1A1A1A;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #FFC107;
+}
+
+.btn-editar {
+    display: inline-block;
+    padding: 7px 14px;
+    background-color: #FFD700;
+    color: #1A1A1A;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-editar:hover {
+    background-color: #FFC107;
+}
+
+.cancelar {
+    background: #1A1A1A;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+
+.errores {
+    background: #FFF3CD;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #FFC107;
+}

@@ -1,0 +1,157 @@
+.formulario{
+    width: 100%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.formulario h2{
+    color: #1A1A1A;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 12px;
+}
+
+.formulario form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label{
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.campo input,
+.campo select{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.campo input:focus,
+.campo select:focus{
+    outline: none;
+    border-color: #FFC107;
+    box-shadow: 0 0 6px rgba(255, 193, 7, 0.35);
+}
+
+.botones{
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.btn{
+    width: 180px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FFD700;
+    color: #1A1A1A;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #FFC107;
+}
+
+.cancelar{
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+}
+
+.cancelar:hover{
+    background-color: #333333;
+}
+
+.lista-ventas{
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.lista-ventas h2{
+    color: #1A1A1A;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+}
+
+.lista-ventas p{
+    text-align: center;
+    color: #1A1A1A;
+}
+
+.lista-ventas table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lista-ventas th{
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    padding: 12px;
+}
+
+.lista-ventas td{
+    padding: 12px;
+    border-bottom: 1px solid #DDDDDD;
+    text-align: center;
+}
+
+.lista-ventas tr:hover{
+    background-color: #FFF8CC;
+}
+
+
+@media (max-width: 768px){
+
+    .formulario{
+        padding: 20px;
+    }
+
+    .formulario form{
+        grid-template-columns: 1fr;
+    }
+
+    .botones{
+        grid-column: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn{
+        width: 100%;
+    }
+
+    .lista-ventas{
+        overflow-x: auto;
+    }
+
+}
